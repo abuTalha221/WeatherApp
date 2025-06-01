@@ -21,11 +21,40 @@
         </div>
         <div class="flex flex-col justify-center items-center mt-4">
             <img id="condition-icon" src="//cdn.weatherapi.com/weather/64x64/day/113.png" alt="weather-icon" class="w-[100px] h-[100px]">
-            <h4 class="text-3xl font-medium" id="location-text">Sunny</h4>
+            <h4 class="text-3xl font-medium" id="condition-text">Sunny</h4>
         </div>
-        <div class="flex justify-center items-center mt-4 gap-2 font-medium text-[70px]
-        " id="temparature-text">20&deg;C</div>
+        <div class="flex justify-center items-center mt-4 gap-2 font-medium text-[70px]" id="temperature-text">20&deg;C</div>
+
+        <div id="rain-chance" class="py-4 px-5 bg-[#FDFCFC] rounded-md flex flex-col gap-4 items-between justify-center">
+            <div class="flex items-center justify-between">
+                <div class="left flex items-center gap-8">
+                    <div class="text-gray-400 text-center">
+                        <h6 class="text-sm font-medium">CLOUD</h6>
+                        <p class="text-sm font-medium text-slate-600" id="cloud-text"></p>
+                    </div>
+                    <div class="text-gray-400 text-center">
+                        <h6 class="text-sm font-medium">HUMIDITY</h6>
+                        <p class="text-sm font-medium text-slate-600" id="humidity-text"></p>
+                    </div>
+                    <div class="text-gray-400 text-center">
+                        <h6 class="text-sm font-medium">WIND</h6>
+                        <p class="text-sm font-medium text-slate-600" id="wind-text"></p>
+                    </div>
+                    <div class="text-gray-400 text-center">
+                        <h6 class="text-sm font-medium">WIND DIRECTION</h6>
+                        <p class="text-sm font-medium text-slate-600" id="wind-direction-text"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="forecast" class="mt-4">
+            <h4 class="text-xl font-medium">Forecast</h4>
+            <div id="forecast-list" class="p-4 flex overflow-x-scroll scroll-smooth snap-x snap-mandatory gap-4 scrollbar-hide">
+            </div>
+        </div>
     </div>
+    <script src="script.js"></script>
     
 </body>
 </html>
